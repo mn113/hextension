@@ -1,0 +1,82 @@
+* {margin:0; padding:0}
+
+body {background: #999}
+
+#gamearea {border:1px solid red; overflow: auto;}
+
+#board {
+	float: left;
+	position: relative;
+	height:434px;
+	width:407px;
+	margin:20px;
+	border: 2px solid blue;
+	background: #eee; xurl(../img/board.png) no-repeat;
+}
+
+#score {
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding: 0 4px;
+	font: bold 24px Helvetica, Arial, sans-serif; 
+	color: green;
+}
+
+#bank {
+	float: left;
+	position: relative;
+	height:600px;
+	width:600px;
+	margin:20px;
+	border: 2px solid black;
+	background: #777;
+}
+
+#bay {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100px;
+	height:100px;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	background: #ddd;
+}
+
+.tile, .place {
+	width: 92px;
+	height: 80px;
+	position:absolute;
+}
+
+.tile.current:hover {
+	cursor: move;
+}
+
+.place {background: url(../img/blanktile.png) no-repeat;}
+.place.valid:hover {background: url(../img/blanktile_hover.png) no-repeat;}
+
+#p11 {top: 100px; left: 16px;}
+#p12 {top: 180px; left: 16px;}
+#p13 {top: 260px; left: 16px;}
+
+#p21 {top: 60px; left: 86px;}
+#p22 {top: 140px; left: 86px;}
+#p23 {top: 220px; left: 86px;}
+#p24 {top: 300px; left: 86px;}
+
+#p31 {top: 20px; left: 156px;}
+#p32 {top: 100px; left: 156px;}
+#p33 {top: 180px; left: 156px;}
+#p34 {top: 260px; left: 156px;}
+#p35 {top: 340px; left: 156px;}
+
+#p41 {top: 60px; left: 226px;}
+#p42 {top: 140px; left: 226px;}
+#p43 {top: 220px; left: 226px;}
+#p44 {top: 300px; left: 226px;}
+
+#p51 {top: 100px; left: 296px;}
+#p52 {top: 180px; left: 296px;}
+#p53 {top: 260px; left: 296px;}
